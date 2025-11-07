@@ -104,7 +104,7 @@ public class HawtioOnlineUtils {
                         .addNewContainer()
                             .addAllToEnv(envVars)
                             .withName("app")
-                            .withImage("quay.io/shreya_kajbaje30/hawtio-"+ imageName + ":" + tag + "-noauth")
+                            .withImage("quay.io/shreya_kajbaje30/hawtio-online-"+ imageName + ":" + tag + "-noauth")
                             .withImagePullPolicy("Always")
                             .withPorts(new ContainerPortBuilder().withName("jolokia").withContainerPort(containerPort).withProtocol("TCP").build())
                         .endContainer()
